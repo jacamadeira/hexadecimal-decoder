@@ -1,25 +1,44 @@
-# hexadecode.py
+# Hexadecimal Decoder
 
-# -------------------------------
-# Este script tem como objetivo decodificar uma string hexadecimal para texto ASCII legível.
-# Foi desenvolvido como parte de um desafio CTF do projeto Global Solutions da FIAP,
-# no curso de Cibersegurança. Ideal para análise de dados codificados ou capturados
-# em desafios de segurança (como CTFs).
-# -------------------------------
+Este projeto é uma ferramenta simples para decodificar valores hexadecimais em texto legível. Ele pode ser útil para desenvolvedores, profissionais de segurança e entusiastas que precisam converter dados em hexadecimal para um formato mais compreensível.
 
-# Sequência hexadecimal fornecida entre aspas triplas (formato exigido pelo desafio)
-codigo_hex = """
-4120666c616720706172612065737465206465736166696f20c3a920464941507b6865785f746f5f61736349497d0a
-"""
+## Índice
 
-# Remover espaços em branco e quebras de linha da string hexadecimal
-# Isso garante que apenas os caracteres válidos de hexadecimal sejam processados
-codigo_hex = codigo_hex.replace("\n", "")
+- [Sobre](#sobre)
+- [Como Usar](#como-usar)
+- [Instalação](#instalação)
+- [Exemplos](#exemplos)
 
-# Converter a string hexadecimal para bytes:
-# - bytes.fromhex() interpreta cada par de caracteres como um byte (ex: '41' = 0x41 = 'A')
-# - decode('utf-8') transforma os bytes em uma string legível em formato UTF-8
-codigo_decodificado = bytes.fromhex(codigo_hex).decode('utf-8')
+## Sobre
 
-# Exibir o resultado final da decodificação no console
-print("Resultado da Decodificação:", codigo_decodificado)
+Este script tem como objetivo decodificar uma string hexadecimal para texto ASCII legível.
+Foi desenvolvido como parte de um desafio CTF do projeto Global Solutions da FIAP, no curso de Cibersegurança. Ideal para análise de dados codificados ou capturados em desafios de segurança (como CTFs).
+
+## Como Usar
+
+1. **Abra o projeto no seu ambiente local ou acesse o repositório online.**
+2. **Forneça a string hexadecimal que você deseja decodificar.**
+3. **Execute a função de decodificação.**
+
+A decodificação será realizada e a saída será apresentada no formato legível (texto).
+
+## Instalação
+
+Para rodar este projeto em seu próprio ambiente, siga os passos abaixo:
+
+1. **Clone o repositório para sua máquina local:**
+
+   ```bash
+   git clone https://github.com/jacamadeira/hexadecimal-decoder.git
+
+2. **Execute o script principal:**
+   ```bash
+   python decoder.py
+
+## Exemplos
+**Exemplos do Código em Funcionamento:**
+![image](https://github.com/user-attachments/assets/0d176c0b-e65f-441b-a29a-fd3c3f30af46)
+
+  Esse modelo traz as informações essenciais para que qualquer pessoa consiga entender o propósito do seu repositório, como utilizá-lo, e como contribuir. Ajuste conforme necessário para o seu caso!
+
+
